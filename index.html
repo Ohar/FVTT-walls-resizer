@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Wall resizer for Foundry VTT</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<form
+        onsubmit="window.resize(event)"
+        id="textAreaForm"
+>
+    <textarea id="textArea" cols="30" rows="10"></textarea>
+    <input id="koef" type="number" step="any"/>
+    <button id="resize" type="submit">Пересчитать</button>
+    <button type="reset">Очистить</button>
+</form>
+<textarea id="result" cols="30" rows="10" readonly></textarea>
+</body>
+</html>
