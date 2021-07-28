@@ -2,7 +2,14 @@ function resize (e) {
     e.preventDefault()
 
     try {
-        const koef = Number(document.getElementById('koef').value || 1)
+        const koef = Number(
+            document
+                .getElementById('koef')
+                .value
+                .toString()
+                .replace(',', '.')
+            || 1
+        )
         const data = JSON.parse(document.getElementById('textArea').value)
         const {walls} = data
 
