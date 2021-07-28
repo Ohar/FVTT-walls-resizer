@@ -12,11 +12,22 @@
         onsubmit="window.resize(event)"
         id="textAreaForm"
 >
-    <textarea id="textArea" cols="30" rows="10"></textarea>
-    <input id="koef" type="number" step="any"/>
-    <button id="resize" type="submit">Пересчитать</button>
+    <label>
+        <h2>JSON сцены</h2>
+        <textarea id="textArea" cols="30" rows="10" ></textarea>
+    </label>
+    <label>
+        <h2>Коэффициент перетяжки</h2>
+        <input id="koef" type="number" step="any"/>
+    </label>
+
+    <button id="resize" type="submit">Пересчитать сцену</button>
     <button type="reset">Очистить</button>
 </form>
-<textarea id="result" cols="30" rows="10" readonly></textarea>
+<label>
+    <h2>Результат</h2>
+    <p>Скопируйте и замените этим кодом содержимое JSON-файла сцены</p>
+    <textarea id="result" cols="30" rows="10" readonly></textarea>
+</label>
 </body>
 </html>
